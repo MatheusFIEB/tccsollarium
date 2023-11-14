@@ -1,0 +1,74 @@
+/* Estilos padrão */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom,#7700ff,#cb02e6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+    
+
+.box {
+    flex: 0 0 calc(33.333% - 20px);
+    padding: 5px 0px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    margin: 10px;
+    width: 1000px;
+    height: auto;
+    
+
+}
+
+.btn-abrir-modal {
+    background-color:#ff6600,;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Media Query para telas menores */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Reduz o tamanho da fonte em telas menores */
+    }
+    .container {
+        flex-direction: column; /* Coluna em vez de linha em telas menores */
+    }
+    .box { 
+        width: 100%; /* Largura total em telas menores */
+        margin-bottom: 20px; /* Espaçamento inferior entre caixas */
+        position: relative;
+    }
+    .btn-abrir-modal {
+        padding: 8px 16px; /* Reduz o tamanho dos botões em telas menores */
+    }
+
+    
+
+
+}
+@media (max-width: 360px) {
+   .box{
+font-size: 14px;
+margin-left: auto;
+   }
+}
+
+
+
+
